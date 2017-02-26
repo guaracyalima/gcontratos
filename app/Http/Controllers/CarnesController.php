@@ -17,7 +17,6 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use Jenssegers\Date\Date;
 
-
 class CarnesController extends Controller
 {
 
