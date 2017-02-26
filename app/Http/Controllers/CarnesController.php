@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Carnes;
 use App\Http\Requests\AdminCarnesRequest;
-
 use App\Http\Requests\AdminDatesRequest;
 use App\Http\Requests\AdminParcelamentoRequest;
 use App\Repositories\CarnesRepository;
