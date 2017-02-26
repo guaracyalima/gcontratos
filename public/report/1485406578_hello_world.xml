@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperPrint xmlns="http://jasperreports.sourceforge.net/jasperreports/print" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/print http://jasperreports.sourceforge.net/xsd/jasperprint.xsd" name="Characterset-Test" pageWidth="595" pageHeight="842" topMargin="20" leftMargin="20" bottomMargin="20" rightMargin="20" locale="pt_BR" timezone="GMT-03:00">
+	<property name="net.sf.jasperreports.export.xml.start.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.end.page.index" value="0"/>
+	<property name="net.sf.jasperreports.export.xml.page.count" value="1"/>
+	<origin band="background"/>
+	<origin band="title"/>
+	<origin band="pageHeader"/>
+	<origin band="columnHeader"/>
+	<origin band="detail"/>
+	<origin band="columnFooter"/>
+	<origin band="pageFooter"/>
+	<origin band="summary"/>
+	<page>
+		<frame>
+			<reportElement uuid="3501dac6-be9b-47b1-bf09-8b25fbc6c79f" mode="Opaque" x="0" y="0" width="595" height="92" backcolor="#006699" origin="1" srcId="1" printId="1"/>
+			<text textAlignment="Center" textHeight="39.09668" lineSpacingFactor="1.1499023" leadingOffset="-6.648926">
+				<reportElement uuid="2464c9ca-82a1-48c9-87ea-b68192294c4a" x="20" y="20" width="349" height="45" forecolor="#FFFFFF" origin="1" srcId="2" printId="1"/>
+				<font fontName="Arial" size="34" isBold="true"/>
+				<textContent><![CDATA[PHPjasper Test]]></textContent>
+			</text>
+		</frame>
+		<line>
+			<reportElement uuid="a511fbdc-5dd2-4d02-9b49-f7d8f8b0feb3" x="0" y="141" width="595" height="1" forecolor="#666666" origin="2" srcId="3" printId="1"/>
+		</line>
+		<text textHeight="22.998047" lineSpacingFactor="1.1499023" leadingOffset="-1.9555664">
+			<reportElement uuid="6f85b46e-f5b1-4f07-b38c-aa0f6bf985e3" x="34" y="111" width="521" height="30" origin="2" srcId="4" printId="1"/>
+			<font fontName="Arial"/>
+			<textContent><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ]]></textContent>
+		</text>
+		<text textHeight="17.248535" lineSpacingFactor="1.1499023" leadingOffset="-2.9333496">
+			<reportElement uuid="c15d0e17-2850-4010-b65a-e4822a371ba3" x="34" y="162" width="521" height="24" origin="4" srcId="5" printId="1"/>
+			<font fontName="Arial" size="15"/>
+			<textContent><![CDATA[Hello World !!!]]></textContent>
+		</text>
+		<text textAlignment="Right" textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="470071d6-9789-41e5-b8f6-3e4340cc0ab2" mode="Opaque" x="20" y="809" width="515" height="13" backcolor="#E6E6E6" origin="6" srcId="6" printId="1"/>
+			<textContent><![CDATA[Page 1 of]]></textContent>
+		</text>
+		<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656">
+			<reportElement uuid="f64278b8-d5b7-41e6-a40d-0e8929c0b848" mode="Opaque" x="535" y="809" width="40" height="13" backcolor="#E6E6E6" origin="6" srcId="7" printId="1"/>
+			<textContent><![CDATA[ 1]]></textContent>
+		</text>
+		<text textHeight="12.578125" lineSpacingFactor="1.2578125" leadingOffset="-2.1972656" valueClass="java.util.Date" pattern="EEEEE dd MMMMM yyyy">
+			<reportElement uuid="2696db9f-481e-441c-8557-40163e951201" x="20" y="809" width="100" height="13" origin="6" srcId="8" printId="1"/>
+			<textContent><![CDATA[Quinta-feira 26 ]]></textContent>
+		</text>
+	</page>
+</jasperPrint>

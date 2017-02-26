@@ -1,0 +1,134 @@
+
+/*# sourceMappingURL=app.css.map */
+.botoesJuntos a{
+    text-decoration: none;
+}
+
+
+.atrado{
+    background: red;
+}
+
+.red-cancelado{
+    font-size: 16px;
+    color: #ac2925;
+}
+.status{
+    font-size: 24px;
+}
+
+.status0{
+    background: #F03861;
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.status1{
+    background: #2AAF74;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.iconStatus{
+    font-size: 16px;
+}
+
+
+.status3{
+    background: #9932CD;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+}
+
+.banIcon{
+    font-size: 13px;
+    color: #9932CD;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.active{
+    border-radius: 15px;
+}
+
+.enderecoTd{
+    width: 45px;
+}
+
+
+/*Front end*/
+
+/*
+ * Start Bootstrap - Full Width Pics (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.image-bg-fluid-height,
+.image-bg-fixed-height {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-bg-fluid-height {
+    background: url('../img/front-end/1.jpg') no-repeat center center scroll;
+    padding: 100px 0;
+}
+
+.image-bg-fixed-height {
+    background: url('../img/front-end/s2.jpg') no-repeat center center scroll;
+    height: 450px;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+section {
+    padding: 75px 0;
+    background: #8B2F97;
+}
+
+.section-heading {
+    margin: 30px 0;
+    font-size: 4em;
+}
+
+.section-lead {
+    margin: 30px 0;
+}
+
+.section-paragraph {
+    margin: 30px 0;
+}
+
+footer {
+    margin: 50px 0;
+    background: #CF56A1;
+}
+
+@media(max-width:768px) {
+    section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading {
+        font-size: 2em;
+    }
+}
