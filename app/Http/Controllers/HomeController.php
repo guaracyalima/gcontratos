@@ -17,8 +17,8 @@ class HomeController extends Controller
     public function index()
     {
 
-        $chart = Charts::database(Carnes::all(), 'bar', 'highcharts')
-            ->title('Relatorio de carnês')
+        $chart = Charts::database(Carnes::all(), 'line', 'highcharts')
+            ->title('Ponto de equilibrio')
             ->elementLabel("Status")
             ->responsive(true)
             ->groupBy('status', null, [0 => 'Pendente', 1 => 'Quitado', 2 => 'Protestado', 3 => 'Cancelado']);
@@ -29,8 +29,8 @@ class HomeController extends Controller
             ->responsive(true)
             ->groupBy('status', null, [0 => 'Pendente', 1 => 'Quitado', 2 => 'Protestado', 3 => 'Cancelado']);
 
-        $chartDespesas = Charts::database(Despesas::all(), 'pie', 'highcharts')
-            ->title('Despesas financeiras ')
+        $chartDespesas = Charts::database(Despesas::all(), 'line', 'highcharts')
+            ->title('Ponto de equilibrio ')
             ->elementLabel("Status")
             ->responsive(true)
             ->groupBy('status', null, [0 => 'Pendente', 1 => 'Quitado', 2 => 'Protestado', 3 => 'Cancelado']);
@@ -38,7 +38,7 @@ class HomeController extends Controller
         ///testes para o graico mensal
         $data = Carnes::all();
         $charty = Charts::create('donut', 'highcharts')
-            ->title('testeMensal')
+            ->title('Desempenho semestral')
             ->elementLabel('My nice label')
             ->labels($data->pluck('primeiroVencimento'))
             ->values($data->pluck('desconto'))

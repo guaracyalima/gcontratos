@@ -159,5 +159,11 @@ Route::post('admin/receitas/update/{id}', ['as' => 'admin.receitas.update', 'use
 Route::get('admin/receitas/destroy/{id}', ['as' => 'admin.receitas.destroy', 'uses' =>'ReceitasController@destroy']);
 
 
+//Relatorios
+
+Route::get('admin/relatorios', ['as' => 'admin.relatorios.index', 'uses' =>'RelatoriosController@index']);
+
+
+
 
 

@@ -26,27 +26,12 @@ class RelatoriosController extends Controller
     public function index()
     {
 
-//        $dt = Carbon::createFromFormat('Y-m-d', $date); //pega a data de hoje para retirar esse mes
-//
-//        $status = 0;
-//
-//        $pegaTudo = DB::select('SELECT * FROM parcelas');
-//        //$pegaTudo = DB::select('SELECT * FROM parcelas WHERE status = ?', [$status]);
-//        $pegaId = DB::select('SELECT id FROM parcelas ORDER BY ID DESC LIMIT 1');
-//
-//        //dd($pegaTudo);
-//
-//        foreach ($pegaId as $treco)
-//        {
-//            foreach ( $pegaTudo as $item )
-//            {
-//
-//                //$cu = DB::select('SELECT * FROM parcelas WHERE ')
-//
-//            }
-//        }
+//        $hoje = Carbon::now();
+//        dd($hoje->month);
 
-        $xtudo = $this->parcelasRepository->paginate(20);
+
+        $xtudo = $this->parcelasRepository->all();
+
         return view('admin.relatorios.index', compact('xtudo'));
 
     }

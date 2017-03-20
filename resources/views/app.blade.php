@@ -58,7 +58,8 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Relatorios <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('admin.relatorios.index', ['date' => date("Y-m-d")]) }}">Mensal</a></li>
+                        <li><a href="{{ route('admin.relatorios.index') }}">Este mes</a></li>
+                        <li><a href="{{ route('admin.receitas.index') }}">Anual</a></li>
                         <li><a href="{{ route('admin.receitas.index') }}">Receitas</a></li>
                         <li><a href="#"></a></li>
                         <li role="separator" class="divider"></li>

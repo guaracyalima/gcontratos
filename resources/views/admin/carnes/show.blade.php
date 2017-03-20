@@ -3,7 +3,7 @@
 @section('content')
 @section('post-script')
     <script>
-        var x = document.getElementsByClassName(".status0").valueOf();
+      aq  var x = document.getElementsByClassName(".status0").valueOf();
 
         console.log("Valor da variavel "+ x);
 
@@ -360,7 +360,7 @@
                         @foreach($carne as $item)
 
                             @if($item->status == 0)
-                            <tr class="danger">
+                            <tr class="info">
                                 @elseif($item->status == 1)
                                     <tr class="success">
                                         @elseif($item->status == 2)
@@ -368,6 +368,8 @@
                                                 @elseif($item->status == 3)
                                                     <tr class="active">
                                 @endif
+                                                        {{--@if({{ date('d/m/Y') }})--}}
+
 
                                 @foreach($nomeDoCliente as $cliente)
                                     <td>{{ $cliente->nome }}</td>
@@ -379,6 +381,7 @@
 
                                 <td>{{ $item->quantidade }}</td>
                                 <td>{{ date('d/m/Y', strtotime($item->vencimento)) }}</td>
+
 
                                 <td>R$ {{ number_format($item->valorParcela, 2) }}</td>
                                 <td>R$ {{ number_format($item->desconto, 2) }}</td>
@@ -402,14 +405,6 @@
                                 <td class="text-center">
                                     @if($item->created_at == $item->updated_at)
 
-                                        {{--<a href="{{ route('admin.carnes.edit', ['id'=>$item->id]) }}" class=" btn btn-primary" title="Editar cliente">Editar</a>--}}
-
-                                        {{--<a href="{{ route('admin.carnes.confPagamento', ['id'=>$item->id, 'status' => 1]) }}"--}}
-                                        {{--class=" btn btn-success" title="Baixa cliente" data-toggle="modal" >--}}
-                                        {{--Confirmar Pagamento--}}
-                                        {{--</a>--}}
-
-                                        {{--<a href="" class=" btn btn-danger" title="Excuir cliente">Excluir</a>--}}
                                     @endif
                                     @if($item->status == 1)
                                         <p class="status1">
