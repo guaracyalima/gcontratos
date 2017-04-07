@@ -1,6 +1,6 @@
-@extends('app')
+@extends('layouts.index')
 
-@section('content')
+@section('conteudo')
     <div class="container">
 
         <h3 class="text-center text-primary">A receber este mês</h3>
@@ -35,10 +35,6 @@
                         <tr class="warning">
                     @elseif($cliente->status !== 0)
                         <tr class="info">
-                    {{--@elseif($cliente->status == 2)--}}
-                        {{--<tr class="warning">--}}
-                    {{--@elseif($cliente->status == 3)--}}
-                        {{--<tr class="active">--}}
                     @endif
 
                             <td><a href="{{ route('admin.carnes.show', ['cpf'=>$cliente->cpf]) }}">{{ $cliente->cpf }}</a></td>

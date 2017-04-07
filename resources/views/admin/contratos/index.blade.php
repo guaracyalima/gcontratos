@@ -1,6 +1,6 @@
-@extends('app')
+@extends('layouts.index')
 
-@section('content')
+@section('conteudo')
 
     <div class="container">
         <h3 class="text-center">Contratos</h3>

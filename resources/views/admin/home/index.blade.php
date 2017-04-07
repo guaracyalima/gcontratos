@@ -1,6 +1,6 @@
-@extends('templates.admin')
+@extends('layouts.index')
 
-@section('content')
+@section('conteudo')
     <div class="container">
         <div class="row">
             <div class="col-md-6">

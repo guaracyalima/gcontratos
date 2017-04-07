@@ -36,10 +36,8 @@
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav">
                 <li><a href="{{ route('admin.home.index') }}">Home</a></li>
-                {{--<li><a href="{{ route('admin.carnes.index') }}">Carnês</a></li>--}}
                 <li><a href="{{ route('admin.produtos.index') }}">Produtos</a></li>
                 <li><a href="{{ route('admin.clientes.index') }}">Clientes</a></li>
-                {{--<li><a href="{{ route('admin.pagamentos.index') }}">Formas de pagamento</a></li>--}}
                 <li><a href="{{ route('admin.contratos.index') }}" disabled="">Contratos</a></li>
 
                 <li class="dropdown">

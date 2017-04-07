@@ -1,17 +1,20 @@
-@extends('app')
+@extends('layouts.index')
 
-@section('content')
+@section('conteudo')
 
     @section('post-script')
         <script>
-            $(document).ready(function(){
-                $('#cpf').mask('000.000.000-00');
-                //$('#cep').mask('00.000-000');
-                $('#telefone').mask('(00) 0 0000-0000');
-            });
 
+        $(document).ready(function(){
+            $('#cpf').mask('000.000.000-00');
+            //$('#cep').mask('00.000-000');
+            $('#telefone').mask('(00) 0 0000-0000');
+        });
 
-            <!-- Adicionando Javascript -->
+        $("#form-create").submit(function() {
+          $('#cpf').unmask();
+          $('#telefone').unmask();
+        });
 
             $(document).ready(function() {
 
@@ -83,8 +86,7 @@
 
         @include('errors._check')
 
-
-        {!! Form::open(['route' => 'admin.clientes.store', 'class' => 'form-inline']) !!}
+        {!! Form::open(['route' => 'admin.clientes.store', 'class' => 'form-inline', 'id' => 'form-create']) !!}
 
         <div class="panel panel-primary">
 
@@ -99,7 +101,6 @@
 
         {!! Form::close() !!}
 
-
     </div>
-    <p class="text-center text-primary">developed by guabirabaDev</p>
+
 @endsection

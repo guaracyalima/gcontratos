@@ -1,6 +1,6 @@
-@extends('app')
+@extends('layouts.index')
 
-@section('content')
+@section('conteudo')
 
     <div class="container">
         @include('errors._check')
@@ -12,7 +12,7 @@
 
 
             <div class="panel-heading">
-                <h5 class="text-center">Editar dados de cliente - {{ $cliente->id }}</h5>
+                <h5 class="text-center">Editar dados de cliente - {{ $cliente->nome }}</h5>
             </div>
 
             @include('admin.clientes._form')
@@ -22,5 +22,5 @@
 
 
     </div>
-    <p class="text-center text-primary">developed by guabirabaDev</p>
+
 @endsection

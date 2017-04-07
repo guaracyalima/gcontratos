@@ -25,25 +25,17 @@ class RelatoriosController extends Controller
 
     public function index()
     {
-
-//        $hoje = Carbon::now();
-//        dd($hoje->month);
-
-
         $xtudo = $this->parcelasRepository->all();
 
         return view('admin.relatorios.index', compact('xtudo'));
 
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function inadimplentes()
     {
-        //
+        $inadimplentes = $this->parcelasRepository->findByField('vencimento');
+
+        return view('admin.relatorios.inadimplentes', compact('inadimplentes'));
     }
 
     /**

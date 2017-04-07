@@ -1,6 +1,7 @@
-@extends('app')
+@extends('layouts.index')
 
-@section('content')
+@section('conteudo')
+
 
     <div class="container">
         @include('errors._check')

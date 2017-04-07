@@ -82,6 +82,8 @@ function finalizaPreloader() {
 
 function calculaTotal(){
 
+  $('.dinheiro').maskMoney('destroy');
+
     document.getElementById("total").value = '0';
 
     var VTOTALLIQUIDO = parseFloat(document.getElementById("valorUnitario").value);
@@ -104,6 +106,7 @@ function calculaTotal(){
 
 function calculaValorParcela() {
 
+  $('.dinheiro').maskMoney('destroy');
 
     document.getElementById("valorParcela").value = '0';
 
@@ -134,4 +137,13 @@ function calculaValorParcela() {
 
     document.getElementById("valorParcela").value = valParcela.toFixed(2);
 
+}
+
+function somenteNumeros(num) {
+  var er = /[^0-9.]/;
+          er.lastIndex = 0;
+          var campo = num;
+          if (er.test(campo.value)) {
+            campo.value = "";
+          }
 }

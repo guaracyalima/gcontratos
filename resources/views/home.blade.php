@@ -1,6 +1,6 @@
-@extends('app')
+@extends('layouts.index')
 
-@section('content')
+@section('conteudo')
 <div class="container">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">

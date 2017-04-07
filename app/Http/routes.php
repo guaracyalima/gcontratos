@@ -83,10 +83,7 @@ Route::get('admin/clientes/get-preco/{id}', ['as' => 'admin.clientes.getPrecoPro
 //pega carnes do cliente
 
 
-
-
 //Pagamentos
-
 Route::get('admin/pagamentos', ['as' => 'admin.pagamentos.index', 'uses' =>'PagamentosController@index']);
 Route::get('admin/pagamentos/create', ['as' => 'admin.pagamentos.create', 'uses' =>'PagamentosController@create']);
 Route::get('admin/pagamentos/edit/{id}', ['as' => 'admin.pagamentos.edit', 'uses' =>'PagamentosController@edit']);
@@ -165,5 +162,6 @@ Route::get('admin/relatorios', ['as' => 'admin.relatorios.index', 'uses' =>'Rela
 
 
 
+// Route::group(['prefix' => 'admin', as' => 'admin.'], function (){
 
-
+// });

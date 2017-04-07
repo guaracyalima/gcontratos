@@ -1,6 +1,7 @@
-@extends('app')
+@extends('layouts.index')
 
-@section('content')
+@section('conteudo')
+
 @section('post-script')
     <script>
       aq  var x = document.getElementsByClassName(".status0").valueOf();
