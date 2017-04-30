@@ -1,6 +1,6 @@
-  @extends('layouts.index')
+  @extends('layouts.tobs')
 
-  @section('conteudo')
+  @section('content')
 
       <div class="container">
           <h3 class="text-center">Clientes</h3>
@@ -130,7 +130,7 @@
 
                                   <div class="form-group">
                                       {!! Form::label('valorUnitario', 'Valor Unitario:') !!}
-                                      {!! Form::select('valorUnitario', [], null ,['class' => 'form-control dinheiro']) !!}
+                                      {!! Form::select('valorUnitario', [], null ,['class' => 'form-control dinheiro dinheirus']) !!}
                                   </div>
 
                                   <div class="form-group">
@@ -157,12 +157,12 @@
                               <div class="row">
                                   <div class="form-group">
                                       {!! Form::label('valorParcela', 'Valor da parcela:') !!}
-                                      {!! Form::text('valorParcela', null ,['class' => 'form-control dinheiro']) !!}
+                                      {!! Form::text('valorParcela', null ,['class' => 'form-control dinheirus']) !!}
                                   </div>
 
-                                  <div class="form-group">
+                                  <div class="form-group"> 
                                       {!! Form::label('total', 'Total:') !!}
-                                      {!! Form::text('total', null ,['class' => 'form-control dinheiro']) !!}
+                                      {!! Form::text('total', null ,['class' => 'form-control dinheirus']) !!}
                                   </div>
                               </div>
 
@@ -189,17 +189,20 @@
               @section('post-script')
 
                   <script type="text/javascript">
-                      $(document).on("change", "#produto_id", function(){
-
+                      $(document).on("change", "#produto_id", function()
+                      {
                           var precoRetornado = $(this).val();
 
-                          $.get('/admin/clientes/get-preco/' + precoRetornado, function (preco) {
+                          $.get('/admin/clientes/get-preco/' + precoRetornado, function (preco)
+                          {
                               $('select[name=valorUnitario]').empty();
-                              $.each(preco, function (key, value) {
-                                  $('select[name=valorUnitario]').append('<option value=' + value.precoUnitario + '>' + value.precoUnitario + '</option>');
+                              $.each(preco, function (key, value)
+                              {
+                                  $('select[name=valorUnitario]').append('<option class="dinheiro" id="precoUnitario" value=' + value.precoUnitario + '>' + value.precoUnitario + '</option>');
                               });
                           })
                         });
+
 
 
                   </script>

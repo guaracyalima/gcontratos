@@ -31,7 +31,7 @@ class CreateParcelasTable extends Migration
             $table->integer('numParcelas');
             $table->string('vencimento');
             $table->double('valorParcela');
-            $table->decimal('total');
+            $table->double('total');
             $table->string('status')->default('0');
             $table->timestamps();
         });

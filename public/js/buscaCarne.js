@@ -30,8 +30,13 @@ $(document).on("change", "#produto_id", function(){
 
 $(function(){
   $(".dinheiro").maskMoney({symbol:'R$ ', showSymbol:true, thousands:'.', decimal:',', symbolStay: true, precision:2, allowNegative: false});
-})
+
+});
+
+
+
 
 $("#definiParcelamento").submit(function() {
   $(".dinheiro").maskMoney('destroy');
 });
+
