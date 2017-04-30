@@ -43,7 +43,7 @@
 
 
           <!--Login Form-->
-          <form id="loginForm" role="form" action="{{ url('/auth/login') }}" class="login-form">
+          <form id="loginForm" role="form" method="POST" action="{{ url('/auth/login') }}" class="login-form">
 
             {!! csrf_field() !!}
 
